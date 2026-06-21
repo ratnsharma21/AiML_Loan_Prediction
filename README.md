@@ -79,14 +79,18 @@ The models were evaluated on the test set and yielded the following metrics:
 - `models/logistic_regression.pkl` — serialized Logistic Regression model.
 - `models/decision_tree.pkl` — serialized Decision Tree model.
 
+> [!NOTE]
+> The dataset (`loan_data.csv`) and model binaries (`models/*.pkl`) are expected to be present in the project directory. The notebook features dynamic path resolution which automatically attempts to load them from local/relative paths (or the sibling folder `Loan Prediction/` on your Desktop).
+
 ## 🚀 How to Run
 1. Install dependencies:
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn
    ```
-2. Open `Loan_Approval_Prediction.ipynb` in Jupyter Notebook or JupyterLab.
-3. Run all cells top to bottom.
-4. To test new profiles, edit the values in the Interactive Prediction Interface cell near the bottom of the notebook and rerun it to generate a new report.
+2. Ensure `loan_data.csv` and the `models/` directory are placed in the root directory (or in the sibling folder structure).
+3. Open `Loan_Approval_Prediction.ipynb` in Jupyter Notebook or JupyterLab.
+4. Run all cells top to bottom.
+5. To test new profiles, edit the values in the Interactive Prediction Interface cell near the bottom of the notebook and rerun it to generate a new report.
 
 ## 🔮 Future Improvements
 - Test more advanced tree-boosting algorithms such as XGBoost, LightGBM, and CatBoost.
